@@ -8,6 +8,11 @@ public class Sarasas {
 	public Sarasas() {
 	}
 	
+	public Sarasas( Irasas[] sarasas, int dydis ) {
+		
+		SarasasIsMasyvo ( sarasas, dydis );
+	}
+	
 	public void SarasasIsMasyvo( Irasas[] sarasas, int dydis ) {
 
 		irasai = sarasas;
@@ -18,13 +23,13 @@ public class Sarasas {
 	
 		for ( int i = 0; i < dydis; i++ ) {
 		
-			parodyti1 ( irasai [ i ].irasoEilute() );
+			parodyti1 ( i );
 			System.out.println();
 		}
 	}
 	
-	public void parodyti1( String iraso_eil ) {
+	public void parodyti1( int iraso_nr ) {
 	
-		System.out.print ( iraso_eil );
+		System.out.print ( irasai [ iraso_nr ].irasoEilute() );
 	}	
 }

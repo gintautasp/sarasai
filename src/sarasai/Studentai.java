@@ -79,4 +79,10 @@ public class Studentai implements Irasas {
 		return eilute;
 	}
 	
+	public double kmi() {
+		
+		double ugis_m = ugis / 100.0;
+		
+		return svoris / ( ugis_m * ugis_m );
+	}
 }

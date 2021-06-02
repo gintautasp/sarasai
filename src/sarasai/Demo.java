@@ -16,9 +16,7 @@ public class Demo {
 			, new Studentai ( "Gintautas", "1970-07-03", 'V', 96, 187 )
 		};
 
-		Sarasas jps = new Sarasas ();
-		
-		jps.SarasasIsMasyvo( java_programuotojai, 5 );
+		Sarasas jps = new StudentuSveikata ( java_programuotojai, 5 );
 		
 		jps.parodyti();
 	}
